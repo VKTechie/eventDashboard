@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import styles from "./Dashboard.module.css";
-import { TEAM_DATA, PALETTE } from "../data/teamData";
+import { PALETTE } from "../data/teamData";
 
 function initials(name) {
   return name.split(" ").map((w) => w[0]).join("");
@@ -58,13 +58,13 @@ function MemberCard({ name, data, palette, onClick }) {
   );
 }
 
-export default function Dashboard({ onSelect }) {
-  const names = Object.keys(TEAM_DATA);
+export default function Dashboard({ onSelect, data }) {
+  const names = Object.keys(data);
 
   const totals = useMemo(() => {
     return names.reduce(
       (acc, n) => {
-        const d = TEAM_DATA[n];
+        const d = data[n];
         acc.events += d.total_events;
         acc.hours += d.total_hours;
         acc.attendees += d.total_attendees;
@@ -73,7 +73,7 @@ export default function Dashboard({ onSelect }) {
       },
       { events: 0, hours: 0, attendees: 0, completed: 0 }
     );
-  }, [names]);
+  }, [names, data]);
 
   const compRate = Math.round((totals.completed / totals.events) * 100);
 
@@ -115,7 +115,7 @@ export default function Dashboard({ onSelect }) {
           <MemberCard
             key={name}
             name={name}
-            data={TEAM_DATA[name]}
+            data={data[name]}
             palette={PALETTE[i % PALETTE.length]}
             onClick={() => onSelect(name, i)}
           />

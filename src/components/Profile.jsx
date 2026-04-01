@@ -3,7 +3,6 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
 } from "recharts";
 import styles from "./Profile.module.css";
-import { TEAM_DATA } from "../data/teamData";
 
 function initials(name) {
   return name.split(" ").map((w) => w[0]).join("");
@@ -32,8 +31,8 @@ function CustomTooltip({ active, payload }) {
   return null;
 }
 
-export default function Profile({ name, paletteIdx, onBack }) {
-  const data = TEAM_DATA[name];
+export default function Profile({ name, paletteIdx, onBack, data: allData }) {
+  const data = allData[name];
   const [filter, setFilter] = useState("All");
   const [monthFilter, setMonthFilter] = useState("All");
 

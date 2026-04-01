@@ -1,3 +1,9 @@
+/*
+Author: Vishnukarthick K
+Description: This file contains the CSS styles for the Dashboard component. It defines the layout, typography
+, and visual design of the dashboard page, including the header, stats grid, team member cards, and responsive behavior. The styles are designed to be clean, modern, and visually appealing while ensuring good usability and readability across different screen sizes.
+*/
+
 .wrapper {
   padding: 28px 24px;
   max-width: 1200px;

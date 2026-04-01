@@ -1,3 +1,8 @@
+/*
+Author: Vishnukarthick K
+Description: This file defines the Profile component, which displays detailed information about a specific staff member's events. It includes a hero section with the staff member's name and summary stats, various charts and KPIs to visualize their event data, and a table listing all their events with filtering options. The component is designed to be visually appealing and informative, providing insights into the staff member's performance and contributions.
+*/
+
 import React, { useState } from "react";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,

@@ -1,6 +1,7 @@
-// Auto-extracted from Event_.xlsx
-// To update: replace this data with fresh values from your Google Sheet
-
+/*
+Author: Vishnukarthick K
+Description: This file contains the static fallback data for the team events. It is used when the Google Sheet is not configured or if there is an error fetching the data from the sheet. The data is structured by staff members, with details about their events, hours, attendees, and other relevant information.
+*/
 export const TEAM_DATA = {
   Uday: {
     total_events: 31,

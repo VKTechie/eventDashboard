@@ -1,3 +1,7 @@
+/*
+Author: Vishnukarthick K
+Description: This custom React hook, `useTeamData`, manages the fetching and state of team data from a Google Sheet. It handles loading states, errors, and provides a fallback to static data if the sheet is not configured or if fetching fails. The hook also supports auto-refreshing the data every 5 minutes when the sheet is live.
+*/
 import { useState, useEffect, useCallback } from "react";
 import { fetchSheetData, isSheetConfigured, clearCache } from "../utils/fetchSheetData";
 import { TEAM_DATA as STATIC_DATA } from "../data/teamData";

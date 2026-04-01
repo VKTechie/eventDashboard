@@ -1,3 +1,7 @@
+/*
+Author: Vishnukarthick K
+Description: This file is the main entry point of the React application. It manages the overall state and layout of the app, including loading states, error handling, and switching between the dashboard and profile views. It also includes a top status bar that shows the data source and refresh status.
+*/
 import React, { useState } from "react";
 import "./index.css";
 import Dashboard from "./components/Dashboard";

@@ -1,3 +1,8 @@
+/*
+Author: Vishnukarthick K
+Description: This file defines the Dashboard component, which serves as the main overview page for the event support staff. It displays key metrics about the team's performance, such as total events, hours logged, attendees served, and completion rate. The dashboard also features a grid of member cards, each showing a summary of an individual staff member's contributions. Users can click on a member card to view their detailed profile. The component is designed to be visually appealing and informative, providing a clear snapshot of the team's activities and achievements.
+*/
+
 import React, { useMemo } from "react";
 import styles from "./Dashboard.module.css";
 import { PALETTE } from "../data/teamData";

@@ -1,3 +1,8 @@
+/*
+Author: Vishnukarthick K
+Description: This file contains the logic to fetch and process data from a Google Sheet published as a CSV. It includes functions to parse the CSV, match columns flexibly, normalize date and time formats, and transform the raw rows into a structured format grouped by staff members. It also implements caching to avoid unnecessary network requests.
+*/
+
 import { SHEET_CSV_URL } from "../config";
 
 /* ================= CSV PARSER ================= */

@@ -1,3 +1,8 @@
+/*
+Author: Vishnukarthick K
+Description: This file contains the CSS styles for the Profile component. It defines the layout, typography
+, and visual design of the profile page, including the hero section, stats cards, KPI list, completion ring, tooltips, and event table. The styles are designed to be responsive and visually appealing while maintaining a clean and modern look.
+*/
 .wrapper {
   padding: 24px;
   max-width: 1200px;
